@@ -1,0 +1,115 @@
+CSS
+
+--Se for criar um arquivo css, e recomendado escrever style.css ao começa o documento.
+@charset "UTF-8";
+Em seguida começa estelerelizando
+
+--Tem como criar uma variavel para cor e fonte basta
+:root {
+	--nomecor0: #c5ebd6;
+	--nomefonte: Arial, Verdana, Helvetica;
+}
+
+
+--Colocando fonte de arquivo(opentype e etc)
+@font-face {
+	font-family: 'MinhaFonte';
+	src: url('arquivo.otf') format('opentype');
+	font-weight: normal;
+}
+
+h1 {font-family: 'MinhaFonte', Arial, sans-serif;}
+
+--Colocando fonte da internet
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+h1 {font-family: 'Bebas Neue'}
+
+--Se voce quiser fzer uma alteração de todos elementos basta digitar
+* {}
+
+--Sombra no texto
+text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.322);
+
+--Sombra no Bloco
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.445);
+
+--Cor gradiente do verde pro rosa e etc
+background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+
+--Arredonda as pontas do bloco
+border-radius: 10px;
+
+--Qual a diferença de (header > h1) para (header h1)
+header  h1 { 
+}
+Este seletor aplica o estilo a qualquer elemento <h1> que esteja dentro de um <header>, independentemente da sua profundidade.
+header > h1 {
+}
+Este seletor aplica o estilo apenas a um <h1> que seja filho direto do <header>.
+
+--Normalmente Usado para tirar todo estilo do link para refazer
+text-decoration: none;
+
+--Quando o mouse passar ele realiza a acao
+nav > a:hover {
+    background-color: var(--cor2);
+}
+
+--Ele deixa rastro da acao anterior(coloca no bloco nao nas acoes igual o houver)
+transition-duration: 0.5s;
+
+--Medidas do bloco
+margin: 15px 0px; ou margin: 15px 0px 15px 0px;
+topo, direita,biaxo, esquerda
+
+--Espacamento entre linhas
+line-height: 2em;
+
+--Criou uma class aonde depois do link ele vai aparecer um emoji de link
+a.externo::after {
+    content: '\1F517';
+}
+
+--*procurar
+text-indent: 30px;
+
+--Coloca o underline debaixo do texto
+text-decoration: underline;
+
+--Margen negativa pode ser usada para complemetar quando a cor nao cobre o bloco de baixo
+margin: -10px -10px 0px -10px;
+
+--Configurando Listas
+list-style-position: inside; Coloca as marcações bolinhas para dentro do bloco
+columns: 2; Cria Colunas
+list-style-type: '\2714\00A0'; Troca as bolinhas por algo(2714 e o simbolo do check, e o 00A0 e um espaço, nao e compativel em todos navegadores
+
+-RESPONSIVIDADE
+--Deixar Bloco no meio da tela(CSS)
+main {
+    max-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+--Trocar de imagem quando a tela diminuir (HTML)
+<picture>
+	<source media="(max-width: 600px)" srcset="imagens/dan-droids-pq.png">
+	<img src="imagens/dan-droids.png" alt="4 androids">
+</picture>
+
+--Imagem se adapta ao tamanho do bloco (CSS)
+main img {
+    width: 100%;
+}
+
+--Deixa imagem centralizada no bloco
+main img.pequena {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+
+        

@@ -1,0 +1,117 @@
+-TAG DE HTML
+<h><\h> *titulo*
+<p></p> *texto*
+
+8gt; p 8gt; Vai aparecera <p>
+
+-Termos como negrito e etc
+<p><b>termo em negrito</b> usando a tag b(não semantico).</p>
+<p><strong>termo de destaque</strong>usando a tag strong(semantica)</p>
+<p><i>termo em italico</i> usando a tag i(nao semantico)</p>
+<p><em>termo em enfase</em> usando a tag EM(semantica).</p>
+<p><mark style="background-color: blue;">um texto marcado</mark> usando a tag Mark</p>
+<p><big>texto grande</big> e <small>um texto pequeno</small> nesse paragrafo</p>
+<p><del>texto com excluida</del> para indicar que ele deve set lido, mas não considerado.</p>
+<p><ins>texto como inserido</ins> para dar uma enfase e indicar que ele foi adicionado depois.</p>
+
+-ADICIONAR EMOJI
+MODELO
+&#xCODIGO;
+https://emojipedia.org/
+
+-SAO OS SIMBOLOS
+&reg;
+&copy;
+&trade;
+&euro;
+&pound;
+&yen;
+&cent;
+&Delta;
+&uarr;
+
+-Cuidado com imagens com direito autoral
+colocar imagem click ctrl+espaço nas "", e no alt coloque uma descrisão da imagem
+<img src="css.png" alt="logo css">
+
+-Favicon e o icone que fica na guia do navegador
+favicon voce cria seu icone
+https://icon-icons.com/pt/
+
+coloca em cima do title para adicionar o icon
+<link rel="shortcut icon" href="html.ico" type="image/x-icon">
+
+-Titulos são como indices de um livro
+h1, h2, h3 etc
+
+Citações e Codigos
+<pre></pre> - Deixa oque for escrito igual oque voce escreve na tela
+<code></code> - Deixa o espaçamento das letras
+<blockquote cite= 'coloca link'>'coloca citação'</blockquote> serve para o google identificar que e uma frase de um site
+<p>Explica uma palavra<abbr title="HyperText Markup Language">HTML</abbr></p>
+        
+-Listas de numeros de 1 a infinitos
+<ol>
+	<li>Acordar</li>
+	<li>Ligar para Joao</li>
+</ol>
+
+-Listas de pontos e etc
+<ul type='escolhe o tipo'>
+        <li>Pao</li>
+        <li>leite</li>
+        <li>Tomate</li>
+</ul>
+
+-links externos de outros sites
+--Esse abre em uma janela nova
+<p>Canal gratuito no<a href="https://youtu.be/LeOVXQDsAIY" target="_blank" rel="exeternal">youtube</a></p>
+
+--Esse abre na mesma janela
+<p>Canal gratuito no <a href="https://youtu.be/LeOVXQDsAIY">youtube</a></p>
+
+
+-links internos de outros sites
+eu crio outro arquivo html para fazer uma 2 pagina
+<p><a href="pag002.html">Click aqui para acesar a 2 pagina</a></p>
+
+-Quando se tem um arquivo dentro da pasta e vc quer acessar um link interno fora da pasta voce tem que escrever ../
+
+-Para criar um link para baixar uma arquivo e necessario o ver as tag
+--Para baixar pdf
+<p><a href="baixar/FAMILIA-CADUNICO.pdf" download="FAMILIA-CADUNICO.pdf" type="application/pdf">Baixar pdf</a></p>
+
+
+-imagem dinamica que muda de acordo com a largura da tela
+<picture>
+        <source media="(max-width: 750px)" srcset="imagem/pimagem.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagem/mimagem.png" type="image/png">
+        <img src="imagem/gimagem.png" alt="imagem flexivel">
+</picture>
+
+-Colocar audio no navegador
+<audio src="music.mp3" controls autoplay></audio>
+
+-Para colocar video e importante se atentar ao tamanho e criar varios formatos
+--Com o handbraker voce consegue converter o video
+
+-Voce pode identificar uma tag com:
+--id usado para uma unica tag
+<p id='nome'>Coloca o conteudo e vira uma caixa</p>
+CSS - p#nome {estilos}
+
+--class usado para varias tag
+<p class='nome'>Coloca o conteudo e vira uma caixa</p>
+<p class='nome'>Coloca o conteudo e vira uma caixa</p>
+CSS - p.nome {estilos}
+
+-Criar caixas para melhor organização
+<div><p>Coloca o conteudo e vira uma caixa</p></div>
+
+Ou orgnize por sentido
+--header - Cabeçalho
+--nav - Menu
+--main - Principal Conteudo
+--article - Artigo
+--aside - Texto de atenção observação
+--footer - Rodape
