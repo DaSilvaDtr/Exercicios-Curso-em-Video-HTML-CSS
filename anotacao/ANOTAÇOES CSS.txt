@@ -85,6 +85,22 @@ list-style-position: inside; Coloca as marcações bolinhas para dentro do bloco
 columns: 2; Cria Colunas
 list-style-type: '\2714\00A0'; Troca as bolinhas por algo(2714 e o simbolo do check, e o 00A0 e um espaço, nao e compativel em todos navegadores
 
+Deixa os blocos do lado um do outro
+display: inline-block;
+
+-Colocar fundo de imagens na div
+div#q3 {
+            background-image: url('imagens/pattern002.png');
+        }
+
+-Muda o tamanho da imagem de fundo
+background-size: 100px 100px;
+
+-Posicao da imagem de fundo
+background-position: right bottom;
+
+
+
 -RESPONSIVIDADE
 --Deixar Bloco no meio da tela(CSS)
 main {
