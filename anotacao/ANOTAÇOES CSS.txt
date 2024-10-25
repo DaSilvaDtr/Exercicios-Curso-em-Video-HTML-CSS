@@ -99,6 +99,9 @@ background-size: 100px 100px;
 -Posicao da imagem de fundo
 background-position: right bottom;
 
+-Deixa a imagem movel paralax
+background-attachment: fixed;
+
 
 
 -RESPONSIVIDADE
