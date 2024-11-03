@@ -27,6 +27,7 @@ header > h1 {
     text-align: center;
     padding: 2px;
     cursor: pointer;
+    
 }
 
 #navmenu:hover {
@@ -51,6 +52,7 @@ menu > ul > li > a {
     background-color: rgb(82, 82, 82);
     color: white;
     border-top: 2px solid gray;
+    
 }
 
 menu > ul > li > a:hover {
